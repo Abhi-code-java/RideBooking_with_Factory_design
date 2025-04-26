@@ -18,7 +18,9 @@ public class RiderEntity {
     private String from;
     @Column(name = "`to`")
     private String to;
+    @Enumerated(EnumType.STRING)
     private TranspostType transpostType;
+    @Enumerated(EnumType.STRING)
     private CompanyType companyType;
 
     private RiderEntity(Builder builder) {
